@@ -47,7 +47,7 @@ function App() {
       <div className={style.App}>
         <div className={style.Coluna}>
           <Card>
-            <Formulario aoSalvar={adicionarEvento} />
+            <Formulario />
           </Card>
           <hr />
           <Card>
