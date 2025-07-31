@@ -12,13 +12,13 @@ function App() {
 
   const [filtro, setFiltro] = useState<Date | null>();
 
-  const adicionarEvento = (evento: IEvento) => {
-    evento.id = Math.round(new Date().getTime() / 1000);
-    // eventos.push(evento);
-    // console.log(eventos);
+  // const adicionarEvento = (evento: IEvento) => {
+  //   evento.id = Math.round(new Date().getTime() / 1000);
+  //   // eventos.push(evento);
+  //   // console.log(eventos);
 
-    // setEventos([...eventos]);
-  };
+  //   // setEventos([...eventos]);
+  // };
   const alterarStatusEvento = (id: number) => {
     // const evento = eventos.find((evento) => evento.id === id);
     // if (evento) {
@@ -26,9 +26,9 @@ function App() {
     // }
     // setEventos([...eventos]);
   };
-  const deletarEvento = (id: number) => {
-    // setEventos([...eventos.filter((evento) => evento.id !== id)]);
-  };
+  // const deletarEvento = (id: number) => {
+  //   // setEventos([...eventos.filter((evento) => evento.id !== id)]);
+  // };
 
   const aplicarFiltro = (data: Date | null) => {
     setFiltro(data);
@@ -53,8 +53,7 @@ function App() {
           <Card>
             <ListaDeEventos
               aoFiltroAplicado={aplicarFiltro}
-              aoAlterarStatus={alterarStatusEvento}
-              aoDeletarEvento={deletarEvento}
+              aoAlterarStatus={alterarStatusEvento}              
             />
           </Card>
         </div>
